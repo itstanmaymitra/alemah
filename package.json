@@ -1,0 +1,23 @@
+{
+    "name": "alemah",
+    "version": "0.0.0",
+    "description": "single vendor e-com website",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "server": "concurrently --kill-others \"sass public/sass/main.scss public/css/main.css -w\" \"nodemon app.js\""
+    },
+    "author": "itsTanmayMitra",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "ejs": "^3.1.8",
+        "express": "^4.18.1"
+    },
+    "devDependencies": {
+        "concurrently": "^7.2.2",
+        "nodemon": "^2.0.16",
+        "sass": "^1.52.3"
+    }
+}
